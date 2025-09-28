@@ -178,7 +178,7 @@ export function ProjectsSection() {
 
                 <div className="relative overflow-hidden">
                   <motion.div
-                    className="relative h-48 w-full overflow-hidden"
+                    className="relative h-48 w-full overflow-hidden group/image"
                     whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.3 }}
                   >
@@ -188,32 +188,34 @@ export function ProjectsSection() {
                       fill
                       className="object-cover transition-transform duration-500 group-hover:scale-110"
                     />
+                    {/* Stable overlay that covers the entire image area */}
                     <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
-                      <motion.div
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        whileHover={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.2 }}
-                      >
-                        <Button size="sm" variant="secondary" asChild>
+                      <div className="opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                        <Button 
+                          size="sm" 
+                          variant="secondary" 
+                          asChild
+                          className="hover:scale-105 transition-transform"
+                        >
                           <a href={project.source_code_link} target="_blank" rel="noopener noreferrer">
                             <Github className="h-4 w-4 mr-2" />
                             Code
                           </a>
                         </Button>
-                      </motion.div>
+                      </div>
                       {project.demo_link && (
-                        <motion.div
-                          initial={{ opacity: 0, scale: 0.8 }}
-                          whileHover={{ opacity: 1, scale: 1 }}
-                          transition={{ duration: 0.2, delay: 0.1 }}
-                        >
-                          <Button size="sm" asChild>
+                        <div className="opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 delay-100">
+                          <Button 
+                            size="sm" 
+                            asChild
+                            className="hover:scale-105 transition-transform"
+                          >
                             <a href={project.demo_link} target="_blank" rel="noopener noreferrer">
                               <ExternalLink className="h-4 w-4 mr-2" />
                               Demo
                             </a>
                           </Button>
-                        </motion.div>
+                        </div>
                       )}
                   </div>
                   </motion.div>

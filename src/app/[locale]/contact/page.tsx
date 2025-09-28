@@ -18,13 +18,13 @@ export default function ContactPage() {
     {
       icon: Phone,
       title: 'Phone',
-      value: '+1 (555) 123-4567',
-      description: 'Mon-Fri from 9am to 6pm'
+      value: '+237 698 80 58 90 / +32 465 75 33 38',
+      description: 'Mon-Fri from 9am to 6pm (GMT+1)'
     },
     {
       icon: MapPin,
       title: 'Location',
-      value: 'Global Remote',
+      value: 'Douala, Makepe',
       description: 'Serving clients worldwide'
     },
     {
