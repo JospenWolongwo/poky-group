@@ -14,8 +14,8 @@
     "hero": {
       "title": "Solutions Innovantes pour les Entreprises Modernes",
       "subtitle": "Nous développons des logiciels sur mesure, des solutions basées sur l'IA et des intégrations cloud qui stimulent la croissance et l'efficacité.",
-      "cta": "Commencer",
-      "learnMore": "En Savoir Plus"
+      "cta": "Démarrez Votre Projet",
+      "learnMore": "Voir Nos Réalisations"
     },
     "services": {
       "title": "Nos Services",
@@ -43,6 +43,48 @@
       "viewAll": "Voir Tous les Projets",
       "liveDemo": "Démo en Direct",
       "code": "Code",
+      "featured": {
+        "title": "Projets en Vedette",
+        "subtitle": "Démontrer notre expertise à travers des solutions du monde réel",
+        "viewAll": "Voir Tous les Projets",
+        "liveDemo": "Démo en Direct",
+        "code": "Code",
+        "items": {
+          "0": {
+            "name": "Pikdrive",
+            "description": "Plateforme moderne de covoiturage connectant conducteurs et passagers avec suivi en temps réel, paiements sécurisés et interface responsive. Prend en charge les capacités PWA pour l'installation mobile.",
+            "tags": {
+              "0": { "name": "Next.js", "color": "blue-text-gradient" },
+              "1": { "name": "Supabase", "color": "green-text-gradient" },
+              "2": { "name": "shadcn/ui", "color": "pink-text-gradient" }
+            },
+            "source_code_link": "https://github.com/JospenWolongwo/pickdrive",
+            "demo_link": "https://pikdrive.com"
+          },
+          "1": {
+            "name": "The Luxar",
+            "description": "Une plateforme moderne de mode et de style de vie de luxe présentant des collections premium, des tendances et des histoires de marque. Construite avec la performance et l'élégance à l'esprit.",
+            "tags": {
+              "0": { "name": "Next.js 14", "color": "blue-text-gradient" },
+              "1": { "name": "TailwindCSS", "color": "green-text-gradient" },
+              "2": { "name": "Supabase", "color": "pink-text-gradient" }
+            },
+            "source_code_link": "https://github.com/JospenWolongwo/theluxar",
+            "demo_link": "https://theluxar.com"
+          },
+          "2": {
+            "name": "Hello Hardware",
+            "description": "Système de gestion de matériel full-stack avec interface client et tableau de bord administrateur. Construit en utilisant l'architecture monorepo NX avec des frontends Angular et backend NestJS.",
+            "tags": {
+              "0": { "name": "Angular 17+", "color": "blue-text-gradient" },
+              "1": { "name": "NestJS", "color": "green-text-gradient" },
+              "2": { "name": "NX Monorepo", "color": "pink-text-gradient" }
+            },
+            "source_code_link": "https://github.com/JospenWolongwo/hello-hardware",
+            "demo_link": ""
+          }
+        }
+      },
       "items": {
         "0": {
           "name": "Pikdrive",

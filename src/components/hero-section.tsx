@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 import { ArrowRight, Play } from 'lucide-react'
 import { useState, useEffect } from 'react'
+import Link from 'next/link'
 
 export function HeroSection() {
   const t = useTranslations('landing.hero')
@@ -102,36 +103,40 @@ export function HeroSection() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Button size="lg" className="text-lg px-8 py-6 group relative overflow-hidden">
-                <motion.span
-                  className="relative z-10 flex items-center"
-                  initial={{ opacity: 1 }}
-                  whileHover={{ opacity: 0 }}
-                  transition={{ duration: 0.2 }}
-                >
-              {t('cta')}
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                </motion.span>
-                <motion.span
-                  className="absolute inset-0 flex items-center justify-center"
-                  initial={{ opacity: 0, y: 20 }}
-                  whileHover={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.2 }}
-                >
-                  {t('cta')}
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </motion.span>
-            </Button>
+              <Button size="lg" className="text-lg px-8 py-6 group relative overflow-hidden" asChild>
+                <Link href="/contact">
+                  <motion.span
+                    className="relative z-10 flex items-center"
+                    initial={{ opacity: 1 }}
+                    whileHover={{ opacity: 0 }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    {t('cta')}
+                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                  </motion.span>
+                  <motion.span
+                    className="absolute inset-0 flex items-center justify-center"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileHover={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    {t('cta')}
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </motion.span>
+                </Link>
+              </Button>
             </motion.div>
             
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Button variant="outline" size="lg" className="text-lg px-8 py-6 group relative">
-              <Play className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
-              {t('learnMore')}
-            </Button>
+              <Button variant="outline" size="lg" className="text-lg px-8 py-6 group relative" asChild>
+                <Link href="/projects">
+                  <Play className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
+                  {t('learnMore')}
+                </Link>
+              </Button>
             </motion.div>
           </motion.div>
           

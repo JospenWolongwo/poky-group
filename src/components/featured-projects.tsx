@@ -9,44 +9,66 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export function FeaturedProjects() {
-  const t = useTranslations('landing.projects')
+  const t = useTranslations('landing.projects.featured')
+  const tItems = useTranslations('landing.projects.featured.items')
 
-  // Top 3 featured projects
+  // Helper function to safely get demo link
+  const getDemoLink = (index: string) => {
+    try {
+      const link = tItems(`${index}.demo_link`)
+      return link && link.trim() !== '' ? link : undefined
+    } catch {
+      return undefined
+    }
+  }
+
+  // Helper function to get project image
+  const getProjectImage = (projectName: string) => {
+    const imageMap: Record<string, string> = {
+      "Pikdrive": "/images/projects/pikdrive.jpg",
+      "The Luxar": "/images/projects/luxar_preview.jpg",
+      "Hello Hardware": "/images/projects/hello_harware.jpg"
+    }
+    return imageMap[projectName] || "/images/projects/default.jpg"
+  }
+
+  // Top 3 featured projects from translations
   const featuredProjects = [
     {
-      name: "Pikdrive",
-      description: "Modern ride-sharing platform connecting drivers and passengers with real-time tracking, secure payments, and a responsive UI. Supports PWA capabilities for mobile installation.",
-      image: "/images/projects/pikdrive.jpg",
+      name: tItems('0.name'),
+      description: tItems('0.description'),
+      image: getProjectImage(tItems('0.name')),
       tags: [
-        { name: "Next.js", color: "blue-text-gradient" },
-        { name: "Supabase", color: "green-text-gradient" },
-        { name: "shadcn/ui", color: "pink-text-gradient" }
+        { name: tItems('0.tags.0.name'), color: tItems('0.tags.0.color') },
+        { name: tItems('0.tags.1.name'), color: tItems('0.tags.1.color') },
+        { name: tItems('0.tags.2.name'), color: tItems('0.tags.2.color') }
       ],
-      source_code_link: "https://github.com/JospenWolongwo/pickdrive",
-      demo_link: "https://pikdrive.com"
+      source_code_link: tItems('0.source_code_link'),
+      demo_link: getDemoLink('0')
     },
     {
-      name: "The Luxar",
-      description: "A modern luxury lifestyle and fashion platform showcasing premium collections, trends, and brand stories. Built with performance and elegance in mind.",
-      image: "/images/projects/luxar_preview.jpg",
+      name: tItems('1.name'),
+      description: tItems('1.description'),
+      image: getProjectImage(tItems('1.name')),
       tags: [
-        { name: "Next.js 14", color: "blue-text-gradient" },
-        { name: "TailwindCSS", color: "green-text-gradient" },
-        { name: "Supabase", color: "pink-text-gradient" }
+        { name: tItems('1.tags.0.name'), color: tItems('1.tags.0.color') },
+        { name: tItems('1.tags.1.name'), color: tItems('1.tags.1.color') },
+        { name: tItems('1.tags.2.name'), color: tItems('1.tags.2.color') }
       ],
-      source_code_link: "https://github.com/JospenWolongwo/theluxar",
-      demo_link: "https://theluxar.com"
+      source_code_link: tItems('1.source_code_link'),
+      demo_link: getDemoLink('1')
     },
     {
-      name: "Hello Hardware",
-      description: "Full-stack hardware management system with customer-facing interface and admin dashboard. Built using NX monorepo architecture with Angular frontends and NestJS backend.",
-      image: "/images/projects/hello_harware.jpg",
+      name: tItems('2.name'),
+      description: tItems('2.description'),
+      image: getProjectImage(tItems('2.name')),
       tags: [
-        { name: "Angular 17+", color: "blue-text-gradient" },
-        { name: "NestJS", color: "green-text-gradient" },
-        { name: "NX Monorepo", color: "pink-text-gradient" }
+        { name: tItems('2.tags.0.name'), color: tItems('2.tags.0.color') },
+        { name: tItems('2.tags.1.name'), color: tItems('2.tags.1.color') },
+        { name: tItems('2.tags.2.name'), color: tItems('2.tags.2.color') }
       ],
-      source_code_link: "https://github.com/JospenWolongwo/hello-hardware"
+      source_code_link: tItems('2.source_code_link'),
+      demo_link: getDemoLink('2')
     }
   ]
 
@@ -164,7 +186,7 @@ export function FeaturedProjects() {
                         <Button size="sm" variant="secondary" asChild>
                           <a href={project.source_code_link} target="_blank" rel="noopener noreferrer">
                             <Github className="h-4 w-4 mr-2" />
-                            Code
+                            {t('code')}
                           </a>
                         </Button>
                       </motion.div>
@@ -177,7 +199,7 @@ export function FeaturedProjects() {
                           <Button size="sm" asChild>
                             <a href={project.demo_link} target="_blank" rel="noopener noreferrer">
                               <ExternalLink className="h-4 w-4 mr-2" />
-                              Demo
+                              {t('liveDemo')}
                             </a>
                           </Button>
                         </motion.div>
