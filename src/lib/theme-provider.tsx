@@ -5,7 +5,17 @@ import { ThemeProvider as NextThemesProvider } from 'next-themes'
 import { type ThemeProviderProps } from 'next-themes'
 
 export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
-  return <NextThemesProvider {...props}>{children}</NextThemesProvider>
+  return (
+    <NextThemesProvider
+      {...props}
+      enableSystem={false}
+      defaultTheme="blue"
+      themes={['light', 'dark', 'blue', 'purple']}
+      attribute="class"
+    >
+      {children}
+    </NextThemesProvider>
+  )
 }
 
 // Utility function to determine theme based on African time zone (GMT +1)

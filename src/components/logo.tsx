@@ -30,9 +30,6 @@ export function Logo({ width = 120, height = 40, className = '' }: LogoProps) {
 
   const logoSrc = theme === 'dark' ? '/logo-dark.svg' : '/logo-day.svg'
 
-  // Debug logging
-  console.log('Logo theme:', theme, 'src:', logoSrc)
-
   return (
     <Image
       src={logoSrc}
@@ -41,10 +38,6 @@ export function Logo({ width = 120, height = 40, className = '' }: LogoProps) {
       height={height}
       priority
       className={className}
-      onError={(e) => {
-        console.error('Logo failed to load:', logoSrc)
-        e.currentTarget.style.display = 'none'
-      }}
     />
   )
 }

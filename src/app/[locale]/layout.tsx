@@ -4,6 +4,7 @@ import { getMessages } from 'next-intl/server';
 import { ThemeProvider } from '@/lib/theme-provider';
 import { Navbar } from '@/components/navbar';
 import { Footer } from '@/components/footer';
+import { AutoTheme } from '@/components/auto-theme';
 import { StructuredData } from '@/components/structured-data';
 import { Analytics } from '@/components/analytics';
 import { PerformanceOptimizer } from '@/components/performance-optimizer';
@@ -110,12 +111,8 @@ export default async function LocaleLayout({
       <body className="antialiased">
         <Analytics />
         <PerformanceOptimizer />
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="blue"
-          themes={['dark', 'blue']}
-          enableSystem={false}
-        >
+        <ThemeProvider>
+          <AutoTheme />
           <NextIntlClientProvider messages={messages}>
             <div className="min-h-screen flex flex-col">
               <Navbar />
