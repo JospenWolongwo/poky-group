@@ -1,0 +1,125 @@
+{
+  "navigation": {
+    "home": "Home",
+    "services": "Services",
+    "projects": "Projects",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "languages": {
+    "english": "English",
+    "french": "French"
+  },
+  "landing": {
+    "hero": {
+      "title": "Innovative Solutions for Modern Business",
+      "subtitle": "We build custom software, AI-driven solutions, and cloud integrations that drive growth and efficiency.",
+      "cta": "Get Started",
+      "learnMore": "Learn More"
+    },
+    "services": {
+      "title": "Our Services",
+      "subtitle": "Comprehensive solutions tailored to your business needs",
+      "customSoftware": {
+        "title": "Custom Software Development",
+        "description": "Bespoke applications built with cutting-edge technologies"
+      },
+      "aiSolutions": {
+        "title": "AI-Driven Solutions",
+        "description": "Intelligent automation and machine learning implementations"
+      },
+      "cloudIntegration": {
+        "title": "Cloud Integration",
+        "description": "Seamless cloud migration and optimization services"
+      },
+      "automation": {
+        "title": "Business Automation",
+        "description": "Streamline processes with smart automation tools"
+      }
+    },
+    "projects": {
+      "title": "Featured Projects",
+      "subtitle": "Showcasing our expertise through real-world solutions",
+      "viewAll": "View All Projects",
+      "liveDemo": "Live Demo",
+      "code": "Code"
+    },
+    "testimonials": {
+      "title": "What Our Clients Say",
+      "subtitle": "Trusted by businesses worldwide"
+    }
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Ready to start your next project? Let's talk!",
+    "sidebar": {
+      "title": "Get in Touch",
+      "description": "We're here to help you bring your ideas to life. Whether you need custom software, AI solutions, or cloud integration, we've got you covered."
+    },
+    "form": {
+      "title": "Send us a message",
+      "description": "Fill out the form below and we'll get back to you as soon as possible.",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "namePlaceholder": "Your full name",
+      "emailPlaceholder": "your.email@example.com",
+      "messagePlaceholder": "Tell us about your project...",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "Failed to send message. Please try again."
+    }
+  },
+  "footer": {
+    "company": {
+      "description": "Innovative solutions for modern business. We build custom software, AI-driven solutions, and cloud integrations that drive growth and efficiency."
+    },
+    "quickLinks": "Quick Links",
+    "services": {
+      "title": "Services",
+      "customSoftware": "Custom Software Development",
+      "aiSolutions": "AI-Driven Solutions",
+      "cloudIntegration": "Cloud Integration",
+      "automation": "Business Automation"
+    },
+    "contact": {
+      "title": "Contact",
+      "email": "Email: contact@pokygroup.com",
+      "phone": "Phone: +237 698 80 58 90 / +32 465 75 33 38",
+      "location": "Location: Douala, Makepe"
+    },
+    "copyright": "© 2024 POKY GROUP. All rights reserved."
+  },
+  "theme": {
+    "toggleTheme": "Toggle Theme",
+    "automatic": "Automatic",
+    "automaticDescription": "Based on GMT+1",
+    "dark": "Dark",
+    "blueDay": "Blue (Day)"
+  },
+  "blog": {
+    "title": "Latest Insights & Tech Articles",
+    "subtitle": "Stay updated with the latest trends in web development, AI, cloud computing, and software engineering.",
+    "viewAll": "View All Articles",
+    "readMore": "Read More",
+    "publishedOn": "Published on",
+    "readTime": "min read",
+    "by": "by",
+    "categories": {
+      "webDevelopment": "Web Development",
+      "aiMl": "AI & ML",
+      "cloudDevops": "Cloud & DevOps",
+      "security": "Security",
+      "backendDevelopment": "Backend Development",
+      "programming": "Programming"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "readMore": "Read More",
+    "learnMore": "Learn More",
+    "getStarted": "Get Started"
+  }
+}

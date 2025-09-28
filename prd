@@ -1,0 +1,148 @@
+
+
+# 📄 Product Requirements Document (PRD)
+
+**Project Name:** POKY GROUP Website
+**Repository:** [github.com/JospenWolongwo/poky-group](https://github.com/JospenWolongwo/poky-group)
+**Tech Stack:** Next.js 14 (App Router) + Supabase + TailwindCSS + shadcn/ui + Framer Motion + i18n (next-intl)
+
+---
+
+## 1. 🎯 Project Goals
+
+* Build a **professional landing site** that reflects **trust, innovation, and expertise**.
+* Demonstrate **we’re not beginners** — showcase industry-standard design, smooth animations, and a modern, responsive layout.
+* Support **multi-language (EN/FR) from the start** with i18n.
+* Optimize for **SEO + fast performance**.
+* Provide a **content hub (blog)** for visibility + thought leadership.
+* Include a **contact form** that sends messages to Supabase.
+
+---
+
+## 2. 🖼️ Key Pages & Features
+
+### 🌍 Landing Page (Homepage)
+
+* Hero section (slogan + CTA button).
+* Services overview with icons.
+* Featured projects carousel.
+* Testimonials (seed with mock data first).
+* CTA → “Contact Us”.
+
+### 🛠️ Services Page
+
+* Cards for each service (custom software, AI-driven solutions, cloud integration, automation).
+* Expandable details per service.
+
+### 📂 Projects / Portfolio Page
+
+* Grid of projects (image + title + description + tech stack).
+* Each project links to a **detail modal/page** with:
+
+  * Screenshots
+  * Problem → Solution → Results
+  * Tech stack used
+
+### 📰 Blog
+
+* Supabase-backed posts.
+* Markdown/MDX support.
+* Categories & tags.
+* SEO-friendly slugs.
+
+### 📞 Contact Page
+
+* Form with: name, email, message.
+* Sends message to Supabase → Admin notified.
+* Add **reCAPTCHA** for spam protection.
+
+### 🌓 Theme & Branding
+
+* Dual theme:
+
+  * Theme 1: 🔵 Blue tone from image you shared
+  * Theme 2: 🟣 Purple tone
+* Tailwind with custom theme config.
+
+### 🌐 Localization (i18n)
+
+* English (default).
+* French (secondary).
+* Language switcher in navbar.
+
+### 📱 Responsiveness
+
+* Mobile-first design.
+* Optimized for all breakpoints (sm, md, lg, xl).
+
+---
+
+## 3. ⚙️ System Architecture
+
+* **Frontend:** Next.js 14 (App Router)
+* **UI/UX:** TailwindCSS + shadcn/ui + Framer Motion
+* **Database/Auth/Storage:** Supabase
+* **Images:** [Unsplash](https://unsplash.com) / [Pexels](https://pexels.com) free stock + project screenshots
+* **Analytics:** Posthog or Plausible (self-hosted if needed)
+* **SEO:** next-seo package
+* **CI/CD:** Vercel for hosting
+
+---
+
+## 4. 🔑 Integrations
+
+* **Supabase**:
+
+  * Store blog posts
+  * Contact form submissions
+  * Future: user accounts + newsletter subscriptions
+* **Email notifications**: Supabase Functions or Resend API
+* **Image hosting**: Supabase storage buckets
+
+---
+
+## 5. 📊 Success Metrics
+
+* Fast load time (Lighthouse score ≥ 90).
+* Bounce rate < 40% on landing page.
+* At least 1 new lead per week via contact form.
+* Blog posts indexed on Google within 48h.
+
+---
+
+## 6. 🛠️ Developer Notes
+
+* Use **file-based routing** in App Router.
+* Keep components **atomic and reusable**.
+* Write **translation-ready** strings:
+
+  ```tsx
+  t('landing.hero.title')
+  ```
+* Use **supabase-js client** for data ops.
+* Implement dark/light theme toggle via `next-themes`.
+
+---
+
+## 7. 📅 Roadmap (MVP → V1)
+
+### Phase 1 (MVP, Week 1-2)
+
+* Landing page
+* Services page
+* Contact form (Supabase integration)
+* i18n setup
+* Theme setup
+
+### Phase 2 (Week 3-4)
+
+* Blog system (Supabase-backed)
+* Portfolio/projects page
+* Responsive design polish
+
+### Phase 3 (Week 5-6)
+
+* SEO optimization
+* Analytics
+* Deployment to Vercel
+* Testing & QA

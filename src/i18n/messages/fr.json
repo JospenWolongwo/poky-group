@@ -1,0 +1,125 @@
+{
+  "navigation": {
+    "home": "Accueil",
+    "services": "Services",
+    "projects": "Projets",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "languages": {
+    "english": "Anglais",
+    "french": "Français"
+  },
+  "landing": {
+    "hero": {
+      "title": "Solutions Innovantes pour les Entreprises Modernes",
+      "subtitle": "Nous développons des logiciels sur mesure, des solutions basées sur l'IA et des intégrations cloud qui stimulent la croissance et l'efficacité.",
+      "cta": "Commencer",
+      "learnMore": "En Savoir Plus"
+    },
+    "services": {
+      "title": "Nos Services",
+      "subtitle": "Solutions complètes adaptées à vos besoins commerciaux",
+      "customSoftware": {
+        "title": "Développement de Logiciels Sur Mesure",
+        "description": "Applications personnalisées construites avec des technologies de pointe"
+      },
+      "aiSolutions": {
+        "title": "Solutions Basées sur l'IA",
+        "description": "Automatisation intelligente et implémentations d'apprentissage automatique"
+      },
+      "cloudIntegration": {
+        "title": "Intégration Cloud",
+        "description": "Services de migration et d'optimisation cloud transparents"
+      },
+      "automation": {
+        "title": "Automatisation d'Entreprise",
+        "description": "Rationalisez les processus avec des outils d'automatisation intelligents"
+      }
+    },
+    "projects": {
+      "title": "Projets en Vedette",
+      "subtitle": "Démontrer notre expertise à travers des solutions du monde réel",
+      "viewAll": "Voir Tous les Projets",
+      "liveDemo": "Démo en Direct",
+      "code": "Code"
+    },
+    "testimonials": {
+      "title": "Ce Que Disent Nos Clients",
+      "subtitle": "Fait confiance par des entreprises du monde entier"
+    }
+  },
+  "contact": {
+    "title": "Contactez-Nous",
+    "subtitle": "Prêt à commencer votre prochain projet ? Parlons-en !",
+    "sidebar": {
+      "title": "Contactez-Nous",
+      "description": "Nous sommes là pour vous aider à donner vie à vos idées. Que vous ayez besoin de logiciels sur mesure, de solutions IA ou d'intégration cloud, nous avons ce qu'il vous faut."
+    },
+    "form": {
+      "title": "Envoyez-nous un message",
+      "description": "Remplissez le formulaire ci-dessous et nous vous répondrons dès que possible.",
+      "name": "Nom",
+      "email": "Email",
+      "message": "Message",
+      "namePlaceholder": "Votre nom complet",
+      "emailPlaceholder": "votre.email@exemple.com",
+      "messagePlaceholder": "Parlez-nous de votre projet...",
+      "submit": "Envoyer le Message",
+      "sending": "Envoi en cours...",
+      "success": "Message envoyé avec succès !",
+      "error": "Échec de l'envoi du message. Veuillez réessayer."
+    }
+  },
+  "footer": {
+    "company": {
+      "description": "Solutions innovantes pour les entreprises modernes. Nous développons des logiciels sur mesure, des solutions basées sur l'IA et des intégrations cloud qui stimulent la croissance et l'efficacité."
+    },
+    "quickLinks": "Liens Rapides",
+    "services": {
+      "title": "Services",
+      "customSoftware": "Développement de Logiciels Sur Mesure",
+      "aiSolutions": "Solutions Basées sur l'IA",
+      "cloudIntegration": "Intégration Cloud",
+      "automation": "Automatisation d'Entreprise"
+    },
+    "contact": {
+      "title": "Contact",
+      "email": "Email: contact@pokygroup.com",
+      "phone": "Téléphone: +237 698 80 58 90 / +32 465 75 33 38",
+      "location": "Localisation: Douala, Makepe"
+    },
+    "copyright": "© 2024 POKY GROUP. Tous droits réservés."
+  },
+  "theme": {
+    "toggleTheme": "Changer de Thème",
+    "automatic": "Automatique",
+    "automaticDescription": "Basé sur GMT+1",
+    "dark": "Sombre",
+    "blueDay": "Bleu (Jour)"
+  },
+  "blog": {
+    "title": "Dernières Actualités & Articles Tech",
+    "subtitle": "Restez à jour avec les dernières tendances en développement web, IA, cloud computing et ingénierie logicielle.",
+    "viewAll": "Voir Tous les Articles",
+    "readMore": "Lire Plus",
+    "publishedOn": "Publié le",
+    "readTime": "min de lecture",
+    "by": "par",
+    "categories": {
+      "webDevelopment": "Développement Web",
+      "aiMl": "IA & ML",
+      "cloudDevops": "Cloud & DevOps",
+      "security": "Sécurité",
+      "backendDevelopment": "Développement Backend",
+      "programming": "Programmation"
+    }
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Une erreur s'est produite",
+    "readMore": "Lire Plus",
+    "learnMore": "En Savoir Plus",
+    "getStarted": "Commencer"
+  }
+}
