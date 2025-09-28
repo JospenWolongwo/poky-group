@@ -24,7 +24,7 @@ export default function ContactPage() {
     {
       icon: MapPin,
       title: 'Location',
-      value: 'Douala, Makepe',
+      value: 'Douala, Makepe | Bruxelles, rue Vital Francoisse, PO 6001 Macinelle',
       description: 'Serving clients worldwide'
     },
     {
