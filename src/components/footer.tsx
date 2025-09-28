@@ -28,7 +28,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <Logo width={100} height={33} />
+            <Logo width={140} height={47} />
             <p className="text-muted-foreground">
               {tFooter('company.description')}
             </p>

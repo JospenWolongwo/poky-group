@@ -46,7 +46,7 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href={`/${locale}`} className="flex items-center">
-            <Logo width={120} height={40} />
+            <Logo width={170} height={53} />
           </Link>
 
           {/* Desktop Navigation */}
