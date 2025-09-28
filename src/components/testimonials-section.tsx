@@ -7,28 +7,29 @@ import { Star, Quote } from 'lucide-react'
 
 export function TestimonialsSection() {
   const t = useTranslations('landing.testimonials')
+  const tItems = useTranslations('landing.testimonials.items')
 
-  // Mock testimonial data - in a real app, this would come from Supabase
+  // Get localized testimonials from translations
   const testimonials = [
     {
       id: 1,
-      name: "Sarah Johnson",
-      role: "CEO, TechStart Inc.",
-      content: "POKY GROUP transformed our business with their innovative AI solutions. The team's expertise and dedication exceeded our expectations.",
+      name: tItems('0.name'),
+      role: tItems('0.role'),
+      content: tItems('0.content'),
       rating: 5
     },
     {
       id: 2,
-      name: "Michael Chen",
-      role: "CTO, DataFlow Systems",
-      content: "Outstanding cloud integration work. They delivered on time and within budget, making our migration seamless and efficient.",
+      name: tItems('1.name'),
+      role: tItems('1.role'),
+      content: tItems('1.content'),
       rating: 5
     },
     {
       id: 3,
-      name: "Emily Rodriguez",
-      role: "Founder, EcoTech Solutions",
-      content: "The custom software they built for us has revolutionized our operations. Highly professional and technically excellent team.",
+      name: tItems('2.name'),
+      role: tItems('2.role'),
+      content: tItems('2.content'),
       rating: 5
     }
   ]

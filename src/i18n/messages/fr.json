@@ -42,11 +42,96 @@
       "subtitle": "Démontrer notre expertise à travers des solutions du monde réel",
       "viewAll": "Voir Tous les Projets",
       "liveDemo": "Démo en Direct",
-      "code": "Code"
+      "code": "Code",
+      "items": {
+        "0": {
+          "name": "Pikdrive",
+          "description": "Plateforme moderne de covoiturage connectant conducteurs et passagers avec suivi en temps réel, paiements sécurisés et interface responsive. Prend en charge les capacités PWA pour l'installation mobile.",
+          "tags": {
+            "0": { "name": "Next.js", "color": "blue-text-gradient" },
+            "1": { "name": "Supabase", "color": "green-text-gradient" },
+            "2": { "name": "shadcn/ui", "color": "pink-text-gradient" }
+          },
+          "source_code_link": "https://github.com/JospenWolongwo/pickdrive",
+          "demo_link": "https://pikdrive.com"
+        },
+        "1": {
+          "name": "Hopimed",
+          "description": "Application de disponibilité des soins de santé qui aide les utilisateurs à trouver des médecins, pharmacies et hôpitaux disponibles dans leur région avec des mises à jour en temps réel et le statut des services d'urgence.",
+          "tags": {
+            "0": { "name": "Angular 17", "color": "blue-text-gradient" },
+            "1": { "name": "NgRx", "color": "green-text-gradient" },
+            "2": { "name": "Tailwind CSS", "color": "pink-text-gradient" }
+          },
+          "source_code_link": "https://github.com/JospenWolongwo/hopimed",
+          "demo_link": "https://hopimed.netlify.app"
+        },
+        "2": {
+          "name": "Hello Hardware",
+          "description": "Système de gestion de matériel full-stack avec interface client et tableau de bord administrateur. Construit en utilisant l'architecture monorepo NX avec des frontends Angular et backend NestJS.",
+          "tags": {
+            "0": { "name": "Angular 17+", "color": "blue-text-gradient" },
+            "1": { "name": "NestJS", "color": "green-text-gradient" },
+            "2": { "name": "NX Monorepo", "color": "pink-text-gradient" }
+          },
+          "source_code_link": "https://github.com/JospenWolongwo/hello-hardware",
+          "demo_link": ""
+        },
+        "3": {
+          "name": "Hello Identity",
+          "description": "Service d'authentification complet avec authentification utilisateur sécurisée, gestion d'identité et support multi-client. Fonctionnalités incluent l'intégration OAuth et la gestion des tokens.",
+          "tags": {
+            "0": { "name": "NestJS", "color": "blue-text-gradient" },
+            "1": { "name": "PostgreSQL", "color": "green-text-gradient" },
+            "2": { "name": "JWT/OAuth", "color": "pink-text-gradient" }
+          },
+          "source_code_link": "https://github.com/JospenWolongwo/hello-identity",
+          "demo_link": ""
+        },
+        "4": {
+          "name": "SecureVault Military",
+          "description": "Plateforme sécurisée de stockage de documents et de communication pour le personnel militaire avec chiffrement de bout en bout, contrôle d'accès basé sur les rôles et journalisation d'audit.",
+          "tags": {
+            "0": { "name": "Angular 17+", "color": "blue-text-gradient" },
+            "1": { "name": "Supabase", "color": "green-text-gradient" },
+            "2": { "name": "Angular Material", "color": "pink-text-gradient" }
+          },
+          "source_code_link": "https://github.com/JospenWolongwo/secure-vault-military",
+          "demo_link": "https://secure-vault-military.netlify.app/dashboard"
+        },
+        "5": {
+          "name": "The Luxar",
+          "description": "Une plateforme moderne de mode et de style de vie de luxe présentant des collections premium, des tendances et des histoires de marque. Construite avec la performance et l'élégance à l'esprit, Luxar offre une expérience d'achat et de découverte transparente avec un design entièrement responsive et une architecture évolutive.",
+          "tags": {
+            "0": { "name": "Next.js 14", "color": "blue-text-gradient" },
+            "1": { "name": "TailwindCSS", "color": "green-text-gradient" },
+            "2": { "name": "Supabase", "color": "pink-text-gradient" }
+          },
+          "source_code_link": "https://github.com/JospenWolongwo/theluxar",
+          "demo_link": "https://theluxar.com"
+        }
+      }
     },
     "testimonials": {
       "title": "Ce Que Disent Nos Clients",
-      "subtitle": "Fait confiance par des entreprises du monde entier"
+      "subtitle": "Fait confiance par des entreprises du monde entier",
+      "items": {
+        "0": {
+          "name": "Sarah Johnson",
+          "role": "PDG, TechStart Inc.",
+          "content": "POKY GROUP a transformé notre entreprise avec leurs solutions IA innovantes. L'expertise et le dévouement de l'équipe ont dépassé nos attentes."
+        },
+        "1": {
+          "name": "Michael Chen",
+          "role": "CTO, DataFlow Systems",
+          "content": "Travail d'intégration cloud exceptionnel. Ils ont livré dans les temps et dans le budget, rendant notre migration transparente et efficace."
+        },
+        "2": {
+          "name": "Emily Rodriguez",
+          "role": "Fondatrice, EcoTech Solutions",
+          "content": "Le logiciel sur mesure qu'ils ont développé pour nous a révolutionné nos opérations. Équipe très professionnelle et techniquement excellente."
+        }
+      }
     }
   },
   "contact": {
@@ -89,7 +174,7 @@
       "phone": "Téléphone: +237 698 80 58 90 / +32 465 75 33 38",
       "location": "Localisation: Douala, Makepe | Bruxelles, rue Vital Francoisse, PO 6001 Macinelle"
     },
-    "copyright": "© 2024 POKY GROUP. Tous droits réservés."
+    "copyright": "© 2020 POKY GROUP. Tous droits réservés."
   },
   "theme": {
     "toggleTheme": "Changer de Thème",

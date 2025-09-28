@@ -9,79 +9,100 @@ import Image from 'next/image'
 
 export function ProjectsSection() {
   const t = useTranslations('landing.projects')
+  const tItems = useTranslations('landing.projects.items')
 
+  // Helper function to safely get demo link
+  const getDemoLink = (index: string) => {
+    try {
+      const link = tItems(`${index}.demo_link`)
+      return link && link.trim() !== '' ? link : undefined
+    } catch {
+      return undefined
+    }
+  }
+
+  // Get localized projects from translations
   const projects = [
     {
-      name: "Pikdrive",
-      description: "Modern ride-sharing platform connecting drivers and passengers with real-time tracking, secure payments, and a responsive UI. Supports PWA capabilities for mobile installation.",
-      image: "/images/projects/pikdrive.jpg",
+      name: tItems('0.name'),
+      description: tItems('0.description'),
       tags: [
-        { name: "Next.js", color: "blue-text-gradient" },
-        { name: "Supabase", color: "green-text-gradient" },
-        { name: "shadcn/ui", color: "pink-text-gradient" }
+        { name: tItems('0.tags.0.name'), color: tItems('0.tags.0.color') },
+        { name: tItems('0.tags.1.name'), color: tItems('0.tags.1.color') },
+        { name: tItems('0.tags.2.name'), color: tItems('0.tags.2.color') }
       ],
-      source_code_link: "https://github.com/JospenWolongwo/pickdrive",
-      demo_link: "https://pikdrive.com"
+      source_code_link: tItems('0.source_code_link'),
+      demo_link: getDemoLink('0')
     },
     {
-      name: "Hopimed",
-      description: "Healthcare availability app that helps users find available doctors, pharmacies, and hospitals in their vicinity with real-time updates and emergency service status.",
-      image: "/images/projects/hopimed.jpg",
+      name: tItems('1.name'),
+      description: tItems('1.description'),
       tags: [
-        { name: "Angular 17", color: "blue-text-gradient" },
-        { name: "NgRx", color: "green-text-gradient" },
-        { name: "Tailwind CSS", color: "pink-text-gradient" }
+        { name: tItems('1.tags.0.name'), color: tItems('1.tags.0.color') },
+        { name: tItems('1.tags.1.name'), color: tItems('1.tags.1.color') },
+        { name: tItems('1.tags.2.name'), color: tItems('1.tags.2.color') }
       ],
-      source_code_link: "https://github.com/JospenWolongwo/hopimed",
-      demo_link: "https://hopimed.netlify.app"
+      source_code_link: tItems('1.source_code_link'),
+      demo_link: getDemoLink('1')
     },
     {
-      name: "Hello Hardware",
-      description: "Full-stack hardware management system with customer-facing interface and admin dashboard. Built using NX monorepo architecture with Angular frontends and NestJS backend.",
-      image: "/images/projects/hello_harware.jpg",
+      name: tItems('2.name'),
+      description: tItems('2.description'),
       tags: [
-        { name: "Angular 17+", color: "blue-text-gradient" },
-        { name: "NestJS", color: "green-text-gradient" },
-        { name: "NX Monorepo", color: "pink-text-gradient" }
+        { name: tItems('2.tags.0.name'), color: tItems('2.tags.0.color') },
+        { name: tItems('2.tags.1.name'), color: tItems('2.tags.1.color') },
+        { name: tItems('2.tags.2.name'), color: tItems('2.tags.2.color') }
       ],
-      source_code_link: "https://github.com/JospenWolongwo/hello-hardware"
+      source_code_link: tItems('2.source_code_link'),
+      demo_link: getDemoLink('2')
     },
     {
-      name: "Hello Identity",
-      description: "Comprehensive authentication service with secure user authentication, identity management, and multi-client support. Features include OAuth integration and token management.",
-      image: "/images/projects/hello_identity.jpg",
+      name: tItems('3.name'),
+      description: tItems('3.description'),
       tags: [
-        { name: "NestJS", color: "blue-text-gradient" },
-        { name: "PostgreSQL", color: "green-text-gradient" },
-        { name: "JWT/OAuth", color: "pink-text-gradient" }
+        { name: tItems('3.tags.0.name'), color: tItems('3.tags.0.color') },
+        { name: tItems('3.tags.1.name'), color: tItems('3.tags.1.color') },
+        { name: tItems('3.tags.2.name'), color: tItems('3.tags.2.color') }
       ],
-      source_code_link: "https://github.com/JospenWolongwo/hello-identity"
+      source_code_link: tItems('3.source_code_link'),
+      demo_link: getDemoLink('3')
     },
     {
-      name: "SecureVault Military",
-      description: "Secure document storage and communication platform for military personnel with end-to-end encryption, role-based access control, and audit logging.",
-      image: "/images/projects/secure_vault.jpg",
+      name: tItems('4.name'),
+      description: tItems('4.description'),
       tags: [
-        { name: "Angular 17+", color: "blue-text-gradient" },
-        { name: "Supabase", color: "green-text-gradient" },
-        { name: "Angular Material", color: "pink-text-gradient" }
+        { name: tItems('4.tags.0.name'), color: tItems('4.tags.0.color') },
+        { name: tItems('4.tags.1.name'), color: tItems('4.tags.1.color') },
+        { name: tItems('4.tags.2.name'), color: tItems('4.tags.2.color') }
       ],
-      source_code_link: "https://github.com/JospenWolongwo/secure-vault-military",
-      demo_link: "https://secure-vault-military.netlify.app/dashboard"
+      source_code_link: tItems('4.source_code_link'),
+      demo_link: getDemoLink('4')
     },
     {
-      name: "The Luxar",
-      description: "A modern luxury lifestyle and fashion platform showcasing premium collections, trends, and brand stories. Built with performance and elegance in mind, Luxar delivers a seamless shopping and discovery experience with fully responsive design and scalable architecture.",
-      image: "/images/projects/luxar_preview.jpg",
+      name: tItems('5.name'),
+      description: tItems('5.description'),
       tags: [
-        { name: "Next.js 14", color: "blue-text-gradient" },
-        { name: "TailwindCSS", color: "green-text-gradient" },
-        { name: "Supabase", color: "pink-text-gradient" }
+        { name: tItems('5.tags.0.name'), color: tItems('5.tags.0.color') },
+        { name: tItems('5.tags.1.name'), color: tItems('5.tags.1.color') },
+        { name: tItems('5.tags.2.name'), color: tItems('5.tags.2.color') }
       ],
-      source_code_link: "https://github.com/JospenWolongwo/theluxar",
-      demo_link: "https://theluxar.com"
+      source_code_link: tItems('5.source_code_link'),
+      demo_link: getDemoLink('5')
     }
   ]
+
+  // Map project names to image paths
+  const getProjectImage = (projectName: string) => {
+    const imageMap: Record<string, string> = {
+      "Pikdrive": "/images/projects/pikdrive.jpg",
+      "Hopimed": "/images/projects/hopimed.jpg",
+      "Hello Hardware": "/images/projects/hello_harware.jpg",
+      "Hello Identity": "/images/projects/hello_identity.jpg",
+      "SecureVault Military": "/images/projects/secure_vault.jpg",
+      "The Luxar": "/images/projects/luxar_preview.jpg"
+    }
+    return imageMap[projectName] || "/images/projects/default.jpg"
+  }
 
   return (
     <section className="py-20 relative overflow-hidden">
@@ -183,7 +204,7 @@ export function ProjectsSection() {
                     transition={{ duration: 0.3 }}
                   >
                     <Image
-                      src={project.image}
+                      src={getProjectImage(project.name)}
                       alt={project.name}
                       fill
                       className="object-cover transition-transform duration-500 group-hover:scale-110"
@@ -199,7 +220,7 @@ export function ProjectsSection() {
                         >
                           <a href={project.source_code_link} target="_blank" rel="noopener noreferrer">
                             <Github className="h-4 w-4 mr-2" />
-                            Code
+                            {t('code')}
                           </a>
                         </Button>
                       </div>
@@ -212,7 +233,7 @@ export function ProjectsSection() {
                           >
                             <a href={project.demo_link} target="_blank" rel="noopener noreferrer">
                               <ExternalLink className="h-4 w-4 mr-2" />
-                              Demo
+                              {t('liveDemo')}
                             </a>
                           </Button>
                         </div>
