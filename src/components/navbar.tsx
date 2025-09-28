@@ -48,17 +48,18 @@ export function Navbar() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-8" role="navigation" aria-label="Main navigation">
             {navItems.map((item) => (
               <Link
                 key={item.key}
                 href={item.href}
-                className="text-foreground hover:text-primary transition-colors"
+                className="text-foreground hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-sm"
+                aria-label={`Navigate to ${t(item.key as keyof typeof t)}`}
               >
                 {t(item.key as keyof typeof t)}
               </Link>
             ))}
-          </div>
+          </nav>
 
           {/* Right side controls */}
           <div className="hidden md:flex items-center space-x-4">
@@ -116,6 +117,9 @@ export function Navbar() {
               variant="outline"
               size="icon"
               onClick={() => setIsOpen(!isOpen)}
+              aria-label={isOpen ? "Close menu" : "Open menu"}
+              aria-expanded={isOpen}
+              aria-controls="mobile-navigation"
             >
               {isOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
             </Button>
@@ -124,14 +128,15 @@ export function Navbar() {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden">
+          <div id="mobile-navigation" className="md:hidden" role="navigation" aria-label="Mobile navigation">
             <div className="px-2 pt-2 pb-3 space-y-1 border-t">
               {navItems.map((item) => (
                 <Link
                   key={item.key}
                   href={item.href}
-                  className="block px-3 py-2 text-foreground hover:text-primary transition-colors"
+                  className="block px-3 py-2 text-foreground hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-sm"
                   onClick={() => setIsOpen(false)}
+                  aria-label={`Navigate to ${t(item.key as keyof typeof t)}`}
                 >
                   {t(item.key as keyof typeof t)}
                 </Link>
