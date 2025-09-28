@@ -1,6 +1,7 @@
 {
   "navigation": {
     "home": "Accueil",
+    "about": "À Propos",
     "services": "Services",
     "projects": "Projets",
     "blog": "Blog",
@@ -196,6 +197,25 @@
       "sending": "Envoi en cours...",
       "success": "Message envoyé avec succès !",
       "error": "Échec de l'envoi du message. Veuillez réessayer."
+    },
+    "info": {
+      "email": {
+        "title": "Email",
+        "description": "Envoyez-nous un email à tout moment"
+      },
+      "phone": {
+        "title": "Téléphone",
+        "description": "Lun-Ven de 9h à 18h (GMT+1)"
+      },
+      "location": {
+        "title": "Localisation",
+        "description": "Servir des clients dans le monde entier"
+      },
+      "responseTime": {
+        "title": "Temps de Réponse",
+        "value": "< 24 heures",
+        "description": "Nous répondons rapidement"
+      }
     }
   },
   "footer": {
@@ -240,6 +260,80 @@
       "security": "Sécurité",
       "backendDevelopment": "Développement Backend",
       "programming": "Programmation"
+    }
+  },
+  "about": {
+    "title": "À Propos de POKY GROUP",
+    "subtitle": "Autonomiser les entreprises grâce à des solutions technologiques innovantes",
+    "hero": {
+      "title": "Nous Construisons l'Avenir des Entreprises",
+      "description": "POKY GROUP est une entreprise technologique de premier plan spécialisée dans le développement de logiciels sur mesure, les solutions basées sur l'IA et les services d'intégration cloud. Nous aidons les entreprises à transformer leurs opérations et à atteindre leurs objectifs numériques grâce à une technologie de pointe."
+    },
+    "mission": {
+      "title": "Notre Mission",
+      "description": "Autonomiser les entreprises du monde entier en fournissant des solutions technologiques innovantes, évolutives et fiables qui stimulent la croissance, l'efficacité et l'avantage concurrentiel à l'ère numérique."
+    },
+    "vision": {
+      "title": "Notre Vision",
+      "description": "Être le leader mondial des solutions technologiques, reconnu pour notre innovation, notre excellence et notre engagement à transformer les entreprises grâce au pouvoir de la technologie."
+    },
+    "values": {
+      "title": "Nos Valeurs",
+      "innovation": {
+        "title": "Innovation",
+        "description": "Nous repoussons constamment les limites du possible, en adoptant de nouvelles technologies et méthodologies pour fournir des solutions de pointe."
+      },
+      "excellence": {
+        "title": "Excellence",
+        "description": "Nous maintenons les plus hauts standards dans tout ce que nous faisons, de la qualité du code au service client, en garantissant des résultats exceptionnels pour nos clients."
+      },
+      "collaboration": {
+        "title": "Collaboration",
+        "description": "Nous croyons au pouvoir du travail d'équipe et travaillons étroitement avec nos clients en tant que partenaires dans leur parcours de succès."
+      },
+      "integrity": {
+        "title": "Intégrité",
+        "description": "Nous menons nos affaires avec honnêteté, transparence et pratiques éthiques, en construisant la confiance à travers chaque interaction."
+      }
+    },
+    "expertise": {
+      "title": "Notre Expertise",
+      "subtitle": "Nous nous spécialisons dans les technologies et méthodologies modernes",
+      "customSoftware": {
+        "title": "Développement de Logiciels Sur Mesure",
+        "description": "Applications full-stack construites avec des frameworks modernes et les meilleures pratiques"
+      },
+      "aiSolutions": {
+        "title": "IA & Machine Learning",
+        "description": "Solutions intelligentes qui automatisent les processus et fournissent des insights basés sur les données"
+      },
+      "cloudIntegration": {
+        "title": "Architecture Cloud",
+        "description": "Solutions cloud évolutives, sécurisées et rentables pour les entreprises de toutes tailles"
+      },
+      "mobileDevelopment": {
+        "title": "Développement Mobile",
+        "description": "Applications mobiles natives et multiplateformes pour iOS et Android"
+      }
+    },
+    "stats": {
+      "title": "Notre Impact",
+      "projects": {
+        "number": "50+",
+        "label": "Projets Terminés"
+      },
+      "clients": {
+        "number": "25+",
+        "label": "Clients Satisfaits"
+      },
+      "experience": {
+        "number": "4+",
+        "label": "Années d'Expérience"
+      },
+      "countries": {
+        "number": "10+",
+        "label": "Pays Servis"
+      }
     }
   },
   "common": {

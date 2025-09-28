@@ -32,6 +32,7 @@ export function Navbar() {
 
   const navItems = [
     { key: 'home', href: `/${locale}` },
+    { key: 'about', href: `/${locale}/about` },
     { key: 'services', href: `/${locale}/services` },
     { key: 'projects', href: `/${locale}/projects` },
     { key: 'blog', href: `/${locale}/blog` },

@@ -1,13 +1,20 @@
+'use client'
+
 import Link from 'next/link'
-import { useTranslations, useLocale } from 'next-intl'
+import { useTranslations } from 'next-intl'
+import { usePathname } from 'next/navigation'
 
 export function Footer() {
   const tNav = useTranslations('navigation')
   const tFooter = useTranslations('footer')
-  const locale = useLocale()
+  const pathname = usePathname()
+  
+  // Extract locale from pathname (e.g., '/fr/page' -> 'fr')
+  const locale = pathname.startsWith('/fr') ? 'fr' : 'en'
 
   const navItems = [
     { key: 'home', href: `/${locale}` },
+    { key: 'about', href: `/${locale}/about` },
     { key: 'services', href: `/${locale}/services` },
     { key: 'projects', href: `/${locale}/projects` },
     { key: 'blog', href: `/${locale}/blog` },
@@ -15,7 +22,7 @@ export function Footer() {
   ]
 
   return (
-    <footer className="bg-muted/50 border-t">
+    <footer key={`footer-${locale}`} className="bg-muted/50 border-t">
       <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}

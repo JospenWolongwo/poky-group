@@ -7,31 +7,32 @@ import { Mail, Phone, MapPin, Clock } from 'lucide-react'
 
 export default function ContactPage() {
   const t = useTranslations('contact')
+  const tInfo = useTranslations('contact.info')
 
   const contactInfo = [
     {
       icon: Mail,
-      title: 'Email',
+      title: tInfo('email.title'),
       value: 'contact@pokygroup.com',
-      description: 'Send us an email anytime'
+      description: tInfo('email.description')
     },
     {
       icon: Phone,
-      title: 'Phone',
+      title: tInfo('phone.title'),
       value: '+237 698 80 58 90 / +32 465 75 33 38',
-      description: 'Mon-Fri from 9am to 6pm (GMT+1)'
+      description: tInfo('phone.description')
     },
     {
       icon: MapPin,
-      title: 'Location',
+      title: tInfo('location.title'),
       value: 'Douala, Makepe | Bruxelles, rue Vital Francoisse, PO 6001 Macinelle',
-      description: 'Serving clients worldwide'
+      description: tInfo('location.description')
     },
     {
       icon: Clock,
-      title: 'Response Time',
-      value: '< 24 hours',
-      description: 'We respond quickly'
+      title: tInfo('responseTime.title'),
+      value: tInfo('responseTime.value'),
+      description: tInfo('responseTime.description')
     }
   ]
 

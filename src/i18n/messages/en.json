@@ -1,6 +1,7 @@
 {
   "navigation": {
     "home": "Home",
+    "about": "About",
     "services": "Services",
     "projects": "Projects",
     "blog": "Blog",
@@ -196,6 +197,25 @@
       "sending": "Sending...",
       "success": "Message sent successfully!",
       "error": "Failed to send message. Please try again."
+    },
+    "info": {
+      "email": {
+        "title": "Email",
+        "description": "Send us an email anytime"
+      },
+      "phone": {
+        "title": "Phone",
+        "description": "Mon-Fri from 9am to 6pm (GMT+1)"
+      },
+      "location": {
+        "title": "Location",
+        "description": "Serving clients worldwide"
+      },
+      "responseTime": {
+        "title": "Response Time",
+        "value": "< 24 hours",
+        "description": "We respond quickly"
+      }
     }
   },
   "footer": {
@@ -240,6 +260,80 @@
       "security": "Security",
       "backendDevelopment": "Backend Development",
       "programming": "Programming"
+    }
+  },
+  "about": {
+    "title": "About POKY GROUP",
+    "subtitle": "Empowering businesses through innovative technology solutions",
+    "hero": {
+      "title": "We Build the Future of Business",
+      "description": "POKY GROUP is a leading technology company specializing in custom software development, AI-driven solutions, and cloud integration services. We help businesses transform their operations and achieve their digital goals through cutting-edge technology."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "To empower businesses worldwide by delivering innovative, scalable, and reliable technology solutions that drive growth, efficiency, and competitive advantage in the digital age."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "To be the global leader in technology solutions, recognized for our innovation, excellence, and commitment to transforming businesses through the power of technology."
+    },
+    "values": {
+      "title": "Our Values",
+      "innovation": {
+        "title": "Innovation",
+        "description": "We constantly push the boundaries of what's possible, embracing new technologies and methodologies to deliver cutting-edge solutions."
+      },
+      "excellence": {
+        "title": "Excellence",
+        "description": "We maintain the highest standards in everything we do, from code quality to customer service, ensuring exceptional results for our clients."
+      },
+      "collaboration": {
+        "title": "Collaboration",
+        "description": "We believe in the power of teamwork and work closely with our clients as partners in their success journey."
+      },
+      "integrity": {
+        "title": "Integrity",
+        "description": "We conduct business with honesty, transparency, and ethical practices, building trust through every interaction."
+      }
+    },
+    "expertise": {
+      "title": "Our Expertise",
+      "subtitle": "We specialize in modern technologies and methodologies",
+      "customSoftware": {
+        "title": "Custom Software Development",
+        "description": "Full-stack applications built with modern frameworks and best practices"
+      },
+      "aiSolutions": {
+        "title": "AI & Machine Learning",
+        "description": "Intelligent solutions that automate processes and provide data-driven insights"
+      },
+      "cloudIntegration": {
+        "title": "Cloud Architecture",
+        "description": "Scalable, secure, and cost-effective cloud solutions for businesses of all sizes"
+      },
+      "mobileDevelopment": {
+        "title": "Mobile Development",
+        "description": "Native and cross-platform mobile applications for iOS and Android"
+      }
+    },
+    "stats": {
+      "title": "Our Impact",
+      "projects": {
+        "number": "50+",
+        "label": "Projects Completed"
+      },
+      "clients": {
+        "number": "25+",
+        "label": "Happy Clients"
+      },
+      "experience": {
+        "number": "4+",
+        "label": "Years Experience"
+      },
+      "countries": {
+        "number": "10+",
+        "label": "Countries Served"
+      }
     }
   },
   "common": {
