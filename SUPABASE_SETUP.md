@@ -75,3 +75,4 @@ CREATE POLICY "Anyone can insert contact messages" ON contact_messages
 3. Set it to public
 4. This will be used for blog post images and project screenshots
 
+

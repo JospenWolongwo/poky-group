@@ -7,6 +7,7 @@ import { usePathname } from 'next/navigation'
 import { Menu, X, Globe, Check } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { ThemeToggle } from '@/components/theme-toggle'
+import { Logo } from '@/components/logo'
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -44,8 +45,8 @@ export function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href={`/${locale}`} className="text-2xl font-bold text-primary">
-            POKY GROUP
+          <Link href={`/${locale}`} className="flex items-center">
+            <Logo width={120} height={40} />
           </Link>
 
           {/* Desktop Navigation */}

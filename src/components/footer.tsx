@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { useTranslations } from 'next-intl'
 import { usePathname } from 'next/navigation'
+import { Logo } from '@/components/logo'
 
 export function Footer() {
   const tNav = useTranslations('navigation')
@@ -27,7 +28,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold text-primary">POKY GROUP</h3>
+            <Logo width={100} height={33} />
             <p className="text-muted-foreground">
               {tFooter('company.description')}
             </p>
