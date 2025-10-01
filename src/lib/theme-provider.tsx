@@ -10,8 +10,9 @@ export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
       {...props}
       enableSystem={false}
       defaultTheme="blue"
-      themes={['light', 'dark', 'blue', 'purple']}
+      themes={['blue', 'dark']}
       attribute="class"
+      storageKey="poky-group-theme"
     >
       {children}
     </NextThemesProvider>

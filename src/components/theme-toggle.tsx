@@ -27,6 +27,7 @@ export function ThemeToggle() {
   }
 
   const toggleTheme = () => {
+    // Toggle between blue and dark themes
     setTheme(theme === 'blue' ? 'dark' : 'blue')
   }
 
