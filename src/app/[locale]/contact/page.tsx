@@ -19,13 +19,13 @@ export default function ContactPage() {
     {
       icon: Phone,
       title: tInfo('phone.title'),
-      value: '+237 698 80 58 90 / +32 465 75 33 38',
+      value: '+32 465 75 33 38',
       description: tInfo('phone.description')
     },
     {
       icon: MapPin,
       title: tInfo('location.title'),
-      value: 'Douala, Makepe | Bruxelles, rue Vital Francoisse, PO 6001 Macinelle',
+      value: 'Bruxelles, rue Vital Francoisse, PO 6001 Macinelle',
       description: tInfo('location.description')
     },
     {

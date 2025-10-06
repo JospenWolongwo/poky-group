@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     default: "POKY GROUP - Innovative Solutions for Modern Business",
     template: "%s | POKY GROUP"
   },
-  description: "We build custom software, AI-driven solutions, and cloud integrations that drive growth and efficiency. Serving clients in Douala, Makepe and Brussels.",
+  description: "We build custom software, AI-driven solutions, and cloud integrations that drive growth and efficiency. Serving clients in Brussels.",
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon.ico',
@@ -30,9 +30,7 @@ export const metadata: Metadata = {
     "business automation",
     "software consulting",
     "tech solutions",
-    "Douala",
     "Brussels",
-    "Cameroon",
     "Belgium"
   ],
   authors: [{ name: "POKY GROUP" }],

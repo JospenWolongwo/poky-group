@@ -9,13 +9,6 @@ export function StructuredData() {
     "contactPoint": [
       {
         "@type": "ContactPoint",
-        "telephone": "+237-698-80-58-90",
-        "contactType": "customer service",
-        "areaServed": "CM",
-        "availableLanguage": ["English", "French"]
-      },
-      {
-        "@type": "ContactPoint",
         "telephone": "+32-465-75-33-38",
         "contactType": "customer service",
         "areaServed": "BE",
@@ -23,12 +16,6 @@ export function StructuredData() {
       }
     ],
     "address": [
-      {
-        "@type": "PostalAddress",
-        "addressLocality": "Douala",
-        "addressRegion": "Littoral",
-        "addressCountry": "CM"
-      },
       {
         "@type": "PostalAddress",
         "streetAddress": "rue Vital Francoisse",
@@ -82,7 +69,7 @@ export function StructuredData() {
       "name": "POKY GROUP"
     },
     "serviceType": "Software Development",
-    "areaServed": ["Cameroon", "Belgium", "Worldwide"],
+    "areaServed": ["Belgium", "Worldwide"],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Software Development Services",
