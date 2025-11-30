@@ -1,95 +1,94 @@
-'use client'
+"use client";
 
-import { useTranslations } from 'next-intl'
-import { motion } from 'framer-motion'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Badge } from '@/components/ui/badge'
-import { 
-  Lightbulb, 
-  Target, 
-  Eye, 
-  Heart, 
-  Code, 
-  Brain, 
-  Cloud, 
+import { useTranslations } from "next-intl";
+import { motion } from "framer-motion";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Lightbulb,
+  Target,
+  Eye,
+  Heart,
+  Code,
+  Brain,
+  Cloud,
   Smartphone,
   TrendingUp,
   Users,
   Globe,
-  Award
-} from 'lucide-react'
+  Award,
+} from "lucide-react";
 
 export default function AboutPage() {
-  const t = useTranslations('about')
+  const t = useTranslations("about");
 
   const values = [
     {
       icon: Lightbulb,
-      title: t('values.innovation.title'),
-      description: t('values.innovation.description')
+      title: t("values.innovation.title"),
+      description: t("values.innovation.description"),
     },
     {
       icon: Award,
-      title: t('values.excellence.title'),
-      description: t('values.excellence.description')
+      title: t("values.excellence.title"),
+      description: t("values.excellence.description"),
     },
     {
       icon: Users,
-      title: t('values.collaboration.title'),
-      description: t('values.collaboration.description')
+      title: t("values.collaboration.title"),
+      description: t("values.collaboration.description"),
     },
     {
       icon: Heart,
-      title: t('values.integrity.title'),
-      description: t('values.integrity.description')
-    }
-  ]
+      title: t("values.integrity.title"),
+      description: t("values.integrity.description"),
+    },
+  ];
 
   const expertise = [
     {
       icon: Code,
-      title: t('expertise.customSoftware.title'),
-      description: t('expertise.customSoftware.description')
+      title: t("expertise.customSoftware.title"),
+      description: t("expertise.customSoftware.description"),
     },
     {
       icon: Brain,
-      title: t('expertise.aiSolutions.title'),
-      description: t('expertise.aiSolutions.description')
+      title: t("expertise.aiSolutions.title"),
+      description: t("expertise.aiSolutions.description"),
     },
     {
       icon: Cloud,
-      title: t('expertise.cloudIntegration.title'),
-      description: t('expertise.cloudIntegration.description')
+      title: t("expertise.cloudIntegration.title"),
+      description: t("expertise.cloudIntegration.description"),
     },
     {
       icon: Smartphone,
-      title: t('expertise.mobileDevelopment.title'),
-      description: t('expertise.mobileDevelopment.description')
-    }
-  ]
+      title: t("expertise.mobileDevelopment.title"),
+      description: t("expertise.mobileDevelopment.description"),
+    },
+  ];
 
   const stats = [
     {
       icon: TrendingUp,
-      number: t('stats.projects.number'),
-      label: t('stats.projects.label')
+      number: t("stats.projects.number"),
+      label: t("stats.projects.label"),
     },
     {
       icon: Users,
-      number: t('stats.clients.number'),
-      label: t('stats.clients.label')
+      number: t("stats.clients.number"),
+      label: t("stats.clients.label"),
     },
     {
       icon: Award,
-      number: t('stats.experience.number'),
-      label: t('stats.experience.label')
+      number: t("stats.experience.number"),
+      label: t("stats.experience.label"),
     },
     {
       icon: Globe,
-      number: t('stats.countries.number'),
-      label: t('stats.countries.label')
-    }
-  ]
+      number: t("stats.countries.number"),
+      label: t("stats.countries.label"),
+    },
+  ];
 
   return (
     <div className="py-20">
@@ -101,18 +100,16 @@ export default function AboutPage() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            {t('title')}
-          </h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">{t("title")}</h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-            {t('subtitle')}
+            {t("subtitle")}
           </p>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-semibold mb-6">
-              {t('hero.title')}
+              {t("hero.title")}
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              {t('hero.description')}
+              {t("hero.description")}
             </p>
           </div>
         </motion.div>
@@ -130,12 +127,12 @@ export default function AboutPage() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
                   <Target className="h-6 w-6 text-primary" />
                 </div>
-                <CardTitle className="text-xl">{t('mission.title')}</CardTitle>
+                <CardTitle className="text-xl">{t("mission.title")}</CardTitle>
               </div>
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground leading-relaxed">
-                {t('mission.description')}
+                {t("mission.description")}
               </p>
             </CardContent>
           </Card>
@@ -146,12 +143,12 @@ export default function AboutPage() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
                   <Eye className="h-6 w-6 text-primary" />
                 </div>
-                <CardTitle className="text-xl">{t('vision.title')}</CardTitle>
+                <CardTitle className="text-xl">{t("vision.title")}</CardTitle>
               </div>
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground leading-relaxed">
-                {t('vision.description')}
+                {t("vision.description")}
               </p>
             </CardContent>
           </Card>
@@ -165,11 +162,11 @@ export default function AboutPage() {
           className="mb-16"
         >
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">{t('values.title')}</h2>
+            <h2 className="text-3xl font-bold mb-4">{t("values.title")}</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {values.map((value, index) => {
-              const Icon = value.icon
+              const Icon = value.icon;
               return (
                 <motion.div
                   key={value.title}
@@ -191,7 +188,7 @@ export default function AboutPage() {
                     </CardContent>
                   </Card>
                 </motion.div>
-              )
+              );
             })}
           </div>
         </motion.div>
@@ -204,14 +201,14 @@ export default function AboutPage() {
           className="mb-16"
         >
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">{t('expertise.title')}</h2>
+            <h2 className="text-3xl font-bold mb-4">{t("expertise.title")}</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              {t('expertise.subtitle')}
+              {t("expertise.subtitle")}
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {expertise.map((item, index) => {
-              const Icon = item.icon
+              const Icon = item.icon;
               return (
                 <motion.div
                   key={item.title}
@@ -235,7 +232,7 @@ export default function AboutPage() {
                     </CardContent>
                   </Card>
                 </motion.div>
-              )
+              );
             })}
           </div>
         </motion.div>
@@ -248,11 +245,11 @@ export default function AboutPage() {
           className="mb-16"
         >
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">{t('stats.title')}</h2>
+            <h2 className="text-3xl font-bold mb-4">{t("stats.title")}</h2>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {stats.map((stat, index) => {
-              const Icon = stat.icon
+              const Icon = stat.icon;
               return (
                 <motion.div
                   key={stat.label}
@@ -274,11 +271,11 @@ export default function AboutPage() {
                     </CardContent>
                   </Card>
                 </motion.div>
-              )
+              );
             })}
           </div>
         </motion.div>
       </div>
     </div>
-  )
+  );
 }

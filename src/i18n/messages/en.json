@@ -253,6 +253,13 @@
     "publishedOn": "Published on",
     "readTime": "min read",
     "by": "by",
+    "backToBlog": "Back to Blog",
+    "tags": "Tags",
+    "category": "Category",
+    "relatedPosts": "Related Posts",
+    "noPosts": "No posts found",
+    "loading": "Loading...",
+    "viewAllPosts": "View All Posts",
     "categories": {
       "webDevelopment": "Web Development",
       "aiMl": "AI & ML",
@@ -260,6 +267,22 @@
       "security": "Security",
       "backendDevelopment": "Backend Development",
       "programming": "Programming"
+    },
+    "affiliate": {
+      "recommendedProducts": "Recommended Products",
+      "bestValue": "Best Value",
+      "popularChoice": "Popular Choice",
+      "editorsPick": "Editor's Pick",
+      "compareProducts": "Compare Products",
+      "compareProductsDescription": "Compare features and find the best product for your needs",
+      "viewDeal": "View Deal",
+      "getStarted": "Get Started",
+      "learnMore": "Learn More",
+      "affiliateDisclosure": "This post contains affiliate links. We may earn a commission if you make a purchase through our links.",
+      "product": "Product",
+      "action": "Action",
+      "topRecommendations": "Top Recommendations",
+      "relatedProducts": "Related Products"
     }
   },
   "about": {

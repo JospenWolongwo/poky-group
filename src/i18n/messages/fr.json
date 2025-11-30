@@ -253,6 +253,13 @@
     "publishedOn": "Publié le",
     "readTime": "min de lecture",
     "by": "par",
+    "backToBlog": "Retour au Blog",
+    "tags": "Tags",
+    "category": "Catégorie",
+    "relatedPosts": "Articles Similaires",
+    "noPosts": "Aucun article trouvé",
+    "loading": "Chargement...",
+    "viewAllPosts": "Voir Tous les Articles",
     "categories": {
       "webDevelopment": "Développement Web",
       "aiMl": "IA & ML",
@@ -260,6 +267,22 @@
       "security": "Sécurité",
       "backendDevelopment": "Développement Backend",
       "programming": "Programmation"
+    },
+    "affiliate": {
+      "recommendedProducts": "Produits Recommandés",
+      "bestValue": "Meilleur Rapport Qualité-Prix",
+      "popularChoice": "Choix Populaire",
+      "editorsPick": "Choix de la Rédaction",
+      "compareProducts": "Comparer les Produits",
+      "compareProductsDescription": "Comparez les fonctionnalités et trouvez le meilleur produit pour vos besoins",
+      "viewDeal": "Voir l'Offre",
+      "getStarted": "Commencer",
+      "learnMore": "En Savoir Plus",
+      "affiliateDisclosure": "Cet article contient des liens d'affiliation. Nous pouvons gagner une commission si vous effectuez un achat via nos liens.",
+      "product": "Produit",
+      "action": "Action",
+      "topRecommendations": "Meilleures Recommandations",
+      "relatedProducts": "Produits Similaires"
     }
   },
   "about": {
